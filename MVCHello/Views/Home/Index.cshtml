@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using(Html.BeginForm("Register","Name", FormMethod.Post))
+{
+    <p>Input your name:</p>
+    <p>@Html.TextBox("userName")</p>
+    <button type="submit">Submit</button>
+}
+
